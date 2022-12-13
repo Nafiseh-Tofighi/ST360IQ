@@ -42,11 +42,6 @@ def config():
         # tangent images
         'tan_data_path':'',                           
         'txt_file_tans': '',                    # list of images in the database(only names)
-        'sampling_method': 'top',               # top, stochastic, random ---> selecting tan patches method
-        'n_tan_patch':16,                       # number of tangent images extracted from a single image
-        'sampling_region_size': [128, 128],     # size of regions on ERP images to compare their saliency scores
-        'tan_stride':64,                        # stride to extract sampling regions
-        'fov':(256, 256),                       # tangent images field of view
 
         # if specific train/test set available
         'split_avail' :True,
@@ -56,6 +51,6 @@ def config():
         # load & save checkpoint
         'snap_path': './weights',               # directory for saving checkpoint
         'checkpoint': None,                     # load checkpoint
-        'if_test':True                          # True for run test set just after training
+        'if_test':True                          # True for run test set right after training
     })
     return config
