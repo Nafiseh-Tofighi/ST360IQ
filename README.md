@@ -13,7 +13,8 @@ Examples of extracted Tangent images.
 
  - Tangent data of the dataset must be available.
  - Downlod the weights from this [website](https://download.pytorch.org/models/resnet50-0676ba61.pth). Rename the `.pth` file as "resnet50.pth" and put it in the `src` folder.
-- Edit parameters in `properties.py` file and run `train.py` for start training.
+ - Install requirements.
+ - Edit parameters in `properties.py` file and run `train.py` for start training.
 
 
 **Parameters**
