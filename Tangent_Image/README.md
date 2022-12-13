@@ -1,7 +1,9 @@
 
 # Tangent images
-**Parameters**
+
 Parameters of the `configuration.py` file should be changed corresponding to the dataset details. Saliency maps of images in the dataset should be available if the sampling method is based on saliency scores(not randomly).
+
+**Parameters:**
 - `source_path`: str.  
 The direction to the folder contains images.
 - `target_path`: str.  
@@ -23,3 +25,8 @@ Dimension of the MLP (FeedForward) layer.
 Size of regions in ERP image that their saliency scores are calculated and the tangent images will generate from centers of these regions.
 - `fov`: (int, int).  
 Field of view for extracting Tangent images.
+
+**In the end, the target folder will contain two sets of files:**
+
+ 1. `.pt` files: For each extracted Tangent image, a `.pt` file will be generated. This file includes data on the Tangent image, its center, quality score, and source ERP image.
+ 2. `tan_imgs_list.txt` file: Including a list of all generated `.pt` files.
