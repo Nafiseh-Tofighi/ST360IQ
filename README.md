@@ -84,3 +84,10 @@ Directory for saving checkpoint.
 Load checkpoint.
 - `if_test`: bool.  
 True for run test set right after training is over.
+*If the last parameter is available, the test results for all checkpoints will be written in the test_results.txt file.*
+
+## Model overview
+
+The following figure is the overview of the implemented model. The saliency sampling-based image quality assessment model, with the help of the vision transformer, is designed. We first extract tangent viewports based on the salient region of the input image with ERP. The following step involves converting the input viewports into a series of tokens. Finally, a vision transformer encoder is included in addition to the related embeddings.
+
+[<img src="https://github.com/Nafiseh-Tofighi/ST360IQ/blob/main/Images/Overview.png"/>](https://github.com/Nafiseh-Tofighi/ST360IQ/blob/main/Images/Overview.png)
