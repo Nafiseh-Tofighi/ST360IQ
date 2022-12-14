@@ -4,8 +4,8 @@ from torchvision import transforms
 from torch.utils.data import DataLoader
 
 import properties
-from src.ViT_model import IQARegression
-from src.resnet50 import resnet50_backbone
+from ViT_model import IQARegression
+from resnet50 import resnet50_backbone
 from trainer import train_epoch, eval_epoch
 from util import RandHorizontalFlip, Normalize, ToTensor, RandShuffle
 from test import test_epoch

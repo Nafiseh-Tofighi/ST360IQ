@@ -6,8 +6,8 @@ import cv2
 from tqdm import tqdm
 
 from config import Config
-from src.resnet50 import resnet50_backbone
-from src.ViT_model import IQARegression
+from resnet50 import resnet50_backbone
+from ViT_model import IQARegression
 from scipy.stats import spearmanr, pearsonr
 from sklearn.metrics import mean_squared_error
 import statistics
