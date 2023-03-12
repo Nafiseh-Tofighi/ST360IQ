@@ -92,3 +92,5 @@ True for run test set right after training is over.
 The following figure is the overview of the implemented model. The saliency sampling-based image quality assessment model, with the help of the vision transformer, is designed. We first extract tangent viewports based on the salient region of the input image with ERP. The following step involves converting the input viewports into a series of tokens. Finally, a vision transformer encoder is included in addition to the related embeddings.
 
 [<img src="https://github.com/Nafiseh-Tofighi/ST360IQ/blob/main/Images/Overview.png"/>](https://github.com/Nafiseh-Tofighi/ST360IQ/blob/main/Images/Overview.png)
+
+The base code for the backbone is utilized from [here](https://github.com/anse3832/MUSIQ/tree/f7e45268da2af7c883f310fa48dd7180ad4dc39e) and for extracting Tangent images from [here](https://github.com/yuyanli0831/OmniFusion/tree/main/equi_pers).
